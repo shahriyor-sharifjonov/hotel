@@ -624,3 +624,77 @@ body{
     }
   }
 }
+
+//=========================================================
+//===========================services======================
+//=========================================================
+
+.services{
+  background: url(../images/services.webp) center / cover no-repeat;
+  margin-top: 100px;
+  color: #fff;
+  padding-bottom: 50px;
+
+  @include media($xxl){
+    margin-top: 50px;
+  }
+
+  &__title{
+    color: #fff;  
+    text-align: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include media($xxl){
+      padding-bottom: 30px;
+    }
+  }
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 100%;
+    width: 100%;
+
+    &__title{
+      max-width: 400px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 180%;
+      color: #FFFFFF;
+
+      @include media($md){
+        max-width: 140px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      span{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+
+        @include media($md){
+          max-width: 160px;
+          font-size: 12px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  &__price{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 180%;
+    color: #FFFFFF;
+
+    @include media($md){
+      font-size: 16px;
+      line-height: 180%;
+    }
+  }
+}
