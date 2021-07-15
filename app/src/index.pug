@@ -11,42 +11,42 @@ html(lang="ru")
       nav.header__nav
         ul.header__list
           li.header__li.dn
-            a(href="#!").header__link.current Главная
+            a(href="#intro").header__link.current Главная
           li.header__li.dn
-            a(href="#!").header__link Гостиница
+            a(href="#hotel").header__link Гостиница
           li.header__li.dn
-            a(href="#!").header__link Ресторан
+            a(href="#restuarant").header__link Ресторан
           li.header__li.dn
-            a(href="#!").header__link Услуги и их стоимость
+            a(href="#services").header__link Услуги и их стоимость
           li.header__li 
-            a(href="#!").header__link Контакты 
+            a(href="#contacts").header__link Контакты 
           li.header__li 
-            a(href="#!").header__link Фото и видео
+            a(href="#gallery").header__link Фото и видео
           li.header__li 
-            a(href="#!").header__link Соленый лиман
+            a(href="#liman").header__link Соленый лиман
           li.header__li 
-            a(href="#!").header__link О нас
+            a(href="#about").header__link О нас
         a(href="index.html").header__logo
           img(src="images/logo.webp", alt="Черная жемчужина").header__logo__img
         ul.header__list.dn
           li.header__li 
-            a(href="#!").header__link.current Главная
+            a(href="#intro").header__link.current Главная
           li.header__li 
-            a(href="#!").header__link Гостиница
+            a(href="#hotel").header__link Гостиница
           li.header__li 
-            a(href="#!").header__link Ресторан
+            a(href="#restuarant").header__link Ресторан
           li.header__li 
-            a(href="#!").header__link Услуги и их стоимость
+            a(href="#services").header__link Услуги и их стоимость
         button.header__button 
           span.header__button-line
     main.main 
-      section.intro
+      section.intro#intro
         h1.intro__title Черная жемчужина
         h2.intro__subtitle Оздоровительный комплекс
         a(href="#!").btn.intro__btn Смотреть номера
         a(href="#!").intro__link (067) 635-41-40; (067) 633-72-55; (067) 635-41-44
         p.intro__p Днепропетровская область, Новомосковский р-н, с. Новотроицкое,ул. Герасименко 69   
-      section.about 
+      section.about#about 
         .container 
           .about__content 
             h2.title.about__title О нашем комплексе
@@ -55,7 +55,7 @@ html(lang="ru")
             img(src="images/about.webp", alt="about").img.about__img
             .abs.abs__top
             .abs.abs__bottom
-      section.hotel 
+      section.hotel#hotel 
         .container 
           h2.title.hotel__title Гостиница
           p.p.hotel__p В нашей гостинице есть 3 вида номеров. Вы можете выбрать любой удобный для Вас номер или снять <span class="green">деревянный сруб</span>.
@@ -90,7 +90,7 @@ html(lang="ru")
               .hotel__item__btns 
                 a(href="#!").hotel__item__btn.green Забронировать
                 a(href="#!").hotel__item__btn Подробнее
-      section.about 
+      section.about#restuarant 
         .container 
           .about__content 
             h2.title.about__title Ресторан
@@ -99,7 +99,7 @@ html(lang="ru")
             img(src="images/restaurant.webp", alt="Черная жемчужина").img.about__img
             .abs.abs__top
             .abs.abs__bottom
-      section.services 
+      section.services#services
         .container 
           h2.title.services__title Услуги и их стоимость
           .services__row
@@ -118,7 +118,7 @@ html(lang="ru")
             p.services__row__title Аренда халата на время
             p.services__price 1 час
             p.services__price 50 грн
-      section.about 
+      section.about#liman 
         .container 
           .about__content 
             h2.title.about__title Соленый лиман
@@ -127,7 +127,7 @@ html(lang="ru")
             img(src="images/liman.webp", alt="liman").img.about__img
             .abs.abs__top
             .abs.abs__bottom
-      section.gallery 
+      section.gallery#gallery 
         .container
           h2.title.gallery__title Фото и видео
           .gallery__row

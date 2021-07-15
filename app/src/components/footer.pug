@@ -2,21 +2,26 @@ mixin footer()
   .container 
     ul.footer__list
       li.footer__li 
-        a(href="#!").footer__link Контакты 
+        a(href="#contacts").footer__link Контакты 
       li.footer__li 
-        a(href="#!").footer__link Фото и видео
+        a(href="#gallery").footer__link Фото и видео
       li.footer__li 
-        a(href="#!").footer__link Соленый лиман
+        a(href="#liman").footer__link Соленый лиман
       li.footer__li 
-        a(href="#!").footer__link О нас
+        a(href="#about").footer__link О нас
     a(href="index.html").header__logo
       img(src="images/logo.webp", alt="Черная жемчужина").header__logo__img
     ul.footer__list.dn
       li.footer__li 
-        a(href="#!").footer__link.current Главная
+        a(href="#intro").footer__link.current Главная
       li.footer__li 
-        a(href="#!").footer__link Гостиница
+        a(href="#hotel").footer__link Гостиница
       li.footer__li 
-        a(href="#!").footer__link Ресторан
+        a(href="#restuarant").footer__link Ресторан
       li.footer__li 
-        a(href="#!").footer__link Услуги и их стоимость
+        a(href="#services").footer__link Услуги и их стоимость
+  .footer__row
+    a(href="tel:+0676354140").footer__link__p <span class="green">(067)</span> 635-41-40;
+    a(href="tel:+0676354140").footer__link__p <span class="green">(067)</span> 633-72-55;
+    a(href="tel:+0676354140").footer__link__p <span class="green">(067)</span> 635-41-44;
+  p.footer__link__p Днепропетровская область, Новомосковский р-н, с. Новотроицкое, ул. Герасименко 69
