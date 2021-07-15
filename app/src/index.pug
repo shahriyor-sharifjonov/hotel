@@ -56,5 +56,48 @@ html(lang="en")
             img(src="images/about.webp", alt="").img.about__img
             .abs.abs__top
             .abs.abs__bottom
-
+      section.hotel 
+        .container 
+          h2.title.hotel__title Гостиница
+          p.p.hotel__p В нашей гостинице есть 3 вида номеров. Вы можете выбрать любой удобный для Вас номер или снять <span class="green">деревянный сруб</span>.
+          .hotel__items 
+            .hotel__item  
+              img(src="images/hotel-1.webp", alt="hotel").hotel__item__img
+              h3.hotel__item__title VIP
+              .hotel__item__row 
+                p.hotel__item__p Площадь: <span>25 м2</span>
+                p.hotel__item__p Мест: <span>1 место</span>
+              p.hotel__item__price <span>300 грн</span> / 1 сутки
+              .hotel__item__btns 
+                a(href="#!").hotel__item__btn.green Забронировать
+                a(href="#!").hotel__item__btn Подробнее
+            .hotel__item  
+              img(src="images/hotel-2.webp", alt="hotel").hotel__item__img
+              h3.hotel__item__title Деревянный сруб
+              .hotel__item__row 
+                p.hotel__item__p Площадь: <span>70 м2</span>
+                p.hotel__item__p Мест: <span>2 место</span>
+              p.hotel__item__price <span>500 грн</span> / 1 сутки
+              .hotel__item__btns 
+                a(href="#!").hotel__item__btn.green Забронировать
+                a(href="#!").hotel__item__btn Подробнее
+            .hotel__item  
+              img(src="images/hotel-3.webp", alt="hotel").hotel__item__img
+              h3.hotel__item__title Отель
+              .hotel__item__row 
+                p.hotel__item__p Площадь: <span>100 м2</span>
+                p.hotel__item__p Мест: <span>1, 2 места</span>
+              p.hotel__item__price <span>700 грн</span> / 1 сутки
+              .hotel__item__btns 
+                a(href="#!").hotel__item__btn.green Забронировать
+                a(href="#!").hotel__item__btn Подробнее
+      section.about 
+        .container 
+          .about__content 
+            h2.title.about__title Ресторан
+            p.p.about__p Мы приглашаем Вас в оздоровительный комплекс <span class="green">«Черная жемчужина»</span>, который находится всего в 50 км от города Днепропетровска, а ощущения от близости к природе просто потрясающие. Он расположен в курортной зоне Соленого лимана. Вы найдете у нас все необходимое для оздоровления и отдыха. Оздоровительный комплекс «Черная жемчужина» — отличное место для проведения банкетов, свадеб, корпоративов и юбилеев. Сочетание загородной тишины, красивая и ухоженная территория, создают уют,  и хорошее настроение. Наличие бассейна, бани, сауны придают комфортности вашему отдыху.
+          .about__imagine 
+            img(src="images/restaurant.webp", alt="").img.about__img
+            .abs.abs__top
+            .abs.abs__bottom
     script(src="scripts/index.js") 

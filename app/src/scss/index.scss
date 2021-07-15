@@ -1,4 +1,5 @@
 @import 'layout/root';
+@import 'layout/font';
 
 *{
   margin: 0;
@@ -8,7 +9,7 @@
 
 body{
   background: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mont', sans-serif;
   color: #161616;
 }
 
@@ -31,10 +32,9 @@ body{
 }
 
 .p{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 216.8%;
   letter-spacing: -0.03em;
   color: #161616;
@@ -54,7 +54,6 @@ body{
 
 .btn{
   background: #008D17;
-  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -363,7 +362,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -110px;
+  margin-top: -115px;
   padding-top: 150px;
   background: url(../images/intro.webp) center / cover no-repeat;
 
@@ -372,7 +371,6 @@ body{
   }
 
   &__title{
-    font-family: 'Stinger Wide', 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
@@ -387,7 +385,6 @@ body{
   }
 
   &__subtitle{
-    font-family: 'Stinger Wide', 'Montserrat';
     font-style: normal;
     font-weight: 300;
     font-size: 55px;
@@ -471,5 +468,143 @@ body{
     max-height: 750px;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+//=========================================================
+//============================hotel========================
+//=========================================================
+
+.hotel{
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  &__title{
+    text-align: right;
+  }
+  &__p{
+    text-align: right;
+    margin-bottom: 50px;
+
+    @include media($xxl){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @include media($xl){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item{
+    max-width: 500px;
+    width: 32%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+    @include media($xl){
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__img{
+      max-width: 100%;
+      max-height: 400px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__title{
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 46px;
+      text-align: center;
+      color: #161616;
+      margin-bottom: 15px;
+    }
+
+    &__btns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &__btn{
+      max-width: 500px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border: 1px solid #008D17;
+      box-sizing: border-box;
+      height: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #161616;
+
+      &.green{
+        background: #008D17;
+        color: #FFFFFF;
+      }
+    }
+
+    &__row{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    &__p{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #161616;
+
+      @include media($md){
+        font-size: 12px;
+      } 
+
+      span{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 33px;
+        color: #161616;
+
+        @include media($md){
+          font-size: 16px;
+        } 
+      }
+    }
+
+    &__price{
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 46px;
+      margin-top: 20px;
+
+      @include media($md){
+        font-size: 24px;
+        line-height: 31px;
+      }
+
+      span{
+        font-weight: 800;
+      }
+    }
   }
 }
