@@ -1283,3 +1283,65 @@ a{
     }
   }
 }
+
+//=========================================================
+//==========================room===========================
+//=========================================================
+
+.room{
+  padding-bottom: 200px;
+
+  @include media($lg){
+    padding-bottom: 100px;
+  }
+
+  &__title{
+    margin-bottom: 20px;
+
+    @include media($xxl){
+      margin-bottom: 25px;
+    }
+  }
+
+  &__sides{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__subtitle{
+    color: #141414;
+    margin-bottom: 20px;
+
+    span{
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #4F4F4F;
+    }
+  }
+
+  &__about{
+    max-width: 500px;
+  }
+
+  &__images{
+    max-width: 850px;
+    width: 100%;
+    margin-top: -80px;
+
+    &__row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__img{
+    width: 30%;
+
+    &.big{
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+}

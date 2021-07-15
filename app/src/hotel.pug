@@ -44,52 +44,36 @@ html(lang="ru")
         a(href="index.html").category__link Главная 
         svg(width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg").category__devider
           path(d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#828282")
-        a(href="index.html#gallery").category__link Фото и видео
+        a(href="index.html#hotel").category__link Бронирование номера
         svg(width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg").category__devider
           path(d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#828282")
-        a(href="#!").category__link Открытый бассейн
-      .place.container 
-        h1.title.place__title Открытый бассейн
-        .place__row
-          .photo
-            h2.title.place__subtitle Фото
-            .photo__items
-              img(src="images/photo-1.webp", alt="photo").photo__item
-              img(src="images/photo-2.webp", alt="photo").photo__item
-              img(src="images/photo-3.webp", alt="photo").photo__item
-              img(src="images/photo-4.webp", alt="photo").photo__item
-              img(src="images/photo-5.webp", alt="photo").photo__item
-              img(src="images/photo-6.webp", alt="photo").photo__item
-              img(src="images/photo-7.webp", alt="photo").photo__item
-              img(src="images/photo-8.webp", alt="photo").photo__item
-          .place__video
-            h2.title.place__subtitle Видео
-            .place__video__items
-              .place__video__item 
-                img(src="images/video-1.webp", alt="").place__video__item__img
-                svg(width='145' height='145' viewbox='0 0 145 145' fill='none' xmlns='http://www.w3.org/2000/svg').place__video__item__play-icon
-                  circle(cx='72.5' cy='72.5001' r='58.5' transform='rotate(15 72.5 72.5001)' fill='url(#paint0_linear)')
-                  path(d='M90 73L63 88.5885V57.4115L90 73Z' fill='#161616')
-                  defs
-                    lineargradient#paint0_linear(x1='72.5' y1='14.0001' x2='72.5' y2='131' gradientunits='userSpaceOnUse')
-                      stop(stop-color='white')
-                      stop(offset='1' stop-color='#7B7B7B')
-              .place__video__item 
-                img(src="images/video-2.webp", alt="").place__video__item__img
-                svg(width='145' height='145' viewbox='0 0 145 145' fill='none' xmlns='http://www.w3.org/2000/svg').place__video__item__play-icon
-                  circle(cx='72.5' cy='72.5001' r='58.5' transform='rotate(15 72.5 72.5001)' fill='url(#paint0_linear)')
-                  path(d='M90 73L63 88.5885V57.4115L90 73Z' fill='#161616')
-                  defs
-                    lineargradient#paint0_linear(x1='72.5' y1='14.0001' x2='72.5' y2='131' gradientunits='userSpaceOnUse')
-                      stop(stop-color='white')
-                      stop(offset='1' stop-color='#7B7B7B')
+        a(href="#!").category__link VIP 
+      .room.container
+        h1.title.room__title Номер отель
+        .room__sides
+          .room__about
+            p.services__row__title.room__subtitle <span>Площадь номера:</span>  <br> 25 м2, жилая часть 17 м2 
+            p.services__row__title.room__subtitle <span>Тип номера:</span>  <br> VIP
+            p.services__row__title.room__subtitle <span>Тип кровати:</span>  <br> Двуспальная кровать 180 х 200 см или 2 кровати 90 х 200 см
+            p.services__row__title.room__subtitle <span>Ванная комната:</span>  <br> Совмещенная
+            p.services__row__title.room__subtitle <span>Wi-fi:</span>  <br> Присутствует
+            hr
+          .room__images
+            img(src="images/vip-1.webp", alt="vip room").room__img.big
+            .room__images__row 
+              img(src="images/vip-2.webp", alt="vip room").room__img
+              img(src="images/vip-3.webp", alt="vip room").room__img
+              img(src="images/vip-4.webp", alt="vip room").room__img
+
+
+
     footer.footer 
       .container 
         ul.footer__list
           li.footer__li 
             a(href="#contacts").footer__link Контакты 
           li.footer__li 
-            a(href="#gallery").footer__link.current Фото и видео
+            a(href="#gallery").footer__link Фото и видео
           li.footer__li 
             a(href="#liman").footer__link Соленый лиман
           li.footer__li 
@@ -100,7 +84,7 @@ html(lang="ru")
           li.footer__li 
             a(href="#intro").footer__link Главная
           li.footer__li 
-            a(href="#hotel").footer__link Гостиница
+            a(href="#hotel").footer__link.current Гостиница
           li.footer__li 
             a(href="#restuarant").footer__link Ресторан
           li.footer__li 
