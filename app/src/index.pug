@@ -155,5 +155,21 @@ html(lang="ru")
             .gallery__item
               img(src="images/gallery-8.webp", alt="gallery").gallery__item__img
               p.gallery__item__p Территория
+      section.about#contacts 
+        .container 
+          .about__content 
+            h2.title.about__title Контакты
+            .about__row
+              a(href="tel:+0676354140").about__link <span class="green">(067)</span> 635-41-40
+              a(href="tel:+0676354140").about__link <span class="green">(067)</span> 633-72-55
+              a(href="tel:+0676354140").about__link <span class="green">(067)</span> 635-41-44
+            p.about__link Днепропетровская область, Новомосковский р-н, с. Новотроицкое, ул. Герасименко 69
+          .about__imagine.dn 
+            img(src="images/map.webp", alt="liman").img.about__img
+            .abs.abs__top
+            .abs.abs__bottom
+    footer.footer
+      include components/footer.pug 
+      +footer
 
     script(src="scripts/index.js") 
