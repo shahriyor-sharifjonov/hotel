@@ -11,6 +11,14 @@ html(lang="en")
     header.header 
       nav.header__nav
         ul.header__list
+          li.header__li.dn
+            a(href="#!").header__link.current Главная
+          li.header__li.dn
+            a(href="#!").header__link Гостиница
+          li.header__li.dn
+            a(href="#!").header__link Ресторан
+          li.header__li.dn
+            a(href="#!").header__link Услуги и их стоимость
           li.header__li 
             a(href="#!").header__link Контакты 
           li.header__li 
@@ -21,7 +29,7 @@ html(lang="en")
             a(href="#!").header__link О нас
         a(href="index.html").header__logo
           img(src="images/logo.webp", alt="").header__logo__img
-        ul.header__list
+        ul.header__list.dn
           li.header__li 
             a(href="#!").header__link.current Главная
           li.header__li 
@@ -39,3 +47,5 @@ html(lang="en")
         a(href="#!").btn.intro__btn Смотреть номера
         a(href="#!").intro__link (067) 635-41-40; (067) 633-72-55; (067) 635-41-44
         p.intro__p Днепропетровская область, Новомосковский р-н, с. Новотроицкое,ул. Герасименко 69   
+
+    script(src="scripts/index.js") 

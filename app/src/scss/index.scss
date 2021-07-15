@@ -95,22 +95,45 @@ body{
     align-items: center;
     list-style: none;
 
+    &.dn{
+      display: flex;
+
+      @include media($xxl){
+        display: none;
+      }
+    }
+
     @include media($xxl) {
       position: fixed;
       top: 0;
       bottom: 0;
-      width: 200px;
+      width: 100%;
       right: 0;
-      background: rgba(78, 94, 255, 0.35);
-      backdrop-filter: blur(5px);
-      padding-top: 50px;
+      background: #141414;
       flex-direction: column;
       transform: translateX(100%);
       transition: 0.5s transform;
+      padding-top: 50px;
       z-index: 50;
+      justify-content: start;
 
       &.open {
         transform: translateX(0);
+      }
+    }
+  }
+
+  &__li{
+
+    @include media($xxl){
+      margin: 15px 0;
+    }  
+
+    &.dn{
+      display: none;
+
+      @include media($xxl){
+        display: block;
       }
     }
   }
@@ -147,6 +170,7 @@ body{
     outline: none;
     background: none;
     display: none;
+    z-index: 111;
 
     @include media($xxl) {
       display: block;
