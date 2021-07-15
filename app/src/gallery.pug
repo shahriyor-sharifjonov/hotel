@@ -1,0 +1,90 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Черная жемчужина
+    link(rel="stylesheet", href="styles/index.css")
+  body 
+    header.header 
+      nav.header__nav
+        ul.header__list
+          li.header__li.dn
+            a(href="#intro").header__link.dark Главная
+          li.header__li.dn
+            a(href="#hotel").header__link.dark Гостиница
+          li.header__li.dn
+            a(href="#restuarant").header__link.dark Ресторан
+          li.header__li.dn
+            a(href="#services").header__link.dark Услуги и их стоимость
+          li.header__li 
+            a(href="#contacts").header__link.dark Контакты 
+          li.header__li 
+            a(href="#gallery").header__link.dark.current Фото и видео
+          li.header__li 
+            a(href="#liman").header__link.dark Соленый лиман
+          li.header__li 
+            a(href="#about").header__link.dark О нас
+        a(href="index.html").header__logo
+          img(src="images/logo-2.webp", alt="Черная жемчужина").header__logo__img
+        ul.header__list.dn
+          li.header__li 
+            a(href="#intro").header__link.dark Главная
+          li.header__li 
+            a(href="#hotel").header__link.dark Гостиница
+          li.header__li 
+            a(href="#restuarant").header__link.dark Ресторан
+          li.header__li 
+            a(href="#services").header__link.dark Услуги и их стоимость
+        button.header__button.dark 
+          span.header__button-line.dark
+    main.main 
+      .category.container
+        a(href="index.html").category__link Главная 
+        svg(width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg").category__devider
+          path(d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#828282")
+        a(href="index.html#gallery").category__link Фото и видео
+        svg(width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg").category__devider
+          path(d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5V3.5ZM16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM1 4.5H16V3.5H1V4.5Z" fill="#828282")
+        a(href="index.html#gallery").category__link Открытый бассейн
+      .place.container 
+        h1.title.place__title Открытый бассейн
+        .place__row
+          .photo
+            h2.title.place__subtitle Фото
+            .photo__items
+              img(src="images/photo-1.webp", alt="photo").photo__item
+              img(src="images/photo-2.webp", alt="photo").photo__item
+              img(src="images/photo-3.webp", alt="photo").photo__item
+              img(src="images/photo-4.webp", alt="photo").photo__item
+              img(src="images/photo-5.webp", alt="photo").photo__item
+              img(src="images/photo-6.webp", alt="photo").photo__item
+              img(src="images/photo-7.webp", alt="photo").photo__item
+              img(src="images/photo-8.webp", alt="photo").photo__item
+          .place__video
+            h2.title.place__subtitle Видео
+            .place__video__item 
+              img(src="images/video-1.webp", alt="").place__video__item__img
+              svg(width='145' height='145' viewbox='0 0 145 145' fill='none' xmlns='http://www.w3.org/2000/svg').place__video__item__play-icon
+                circle(cx='72.5' cy='72.5001' r='58.5' transform='rotate(15 72.5 72.5001)' fill='url(#paint0_linear)')
+                path(d='M90 73L63 88.5885V57.4115L90 73Z' fill='#161616')
+                defs
+                  lineargradient#paint0_linear(x1='72.5' y1='14.0001' x2='72.5' y2='131' gradientunits='userSpaceOnUse')
+                    stop(stop-color='white')
+                    stop(offset='1' stop-color='#7B7B7B')
+            .place__video__item 
+              img(src="images/video-2.webp", alt="").place__video__item__img
+              svg(width='145' height='145' viewbox='0 0 145 145' fill='none' xmlns='http://www.w3.org/2000/svg').place__video__item__play-icon
+                circle(cx='72.5' cy='72.5001' r='58.5' transform='rotate(15 72.5 72.5001)' fill='url(#paint0_linear)')
+                path(d='M90 73L63 88.5885V57.4115L90 73Z' fill='#161616')
+                defs
+                  lineargradient#paint0_linear(x1='72.5' y1='14.0001' x2='72.5' y2='131' gradientunits='userSpaceOnUse')
+                    stop(stop-color='white')
+                    stop(offset='1' stop-color='#7B7B7B')
+    footer.footer 
+      include components/footer.pug 
+      +footer
+
+
+    script(src="scripts/index.js") 
