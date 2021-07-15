@@ -39,6 +39,15 @@ body{
   letter-spacing: -0.03em;
   color: #161616;
 
+  &.small{
+    font-size: 18px;
+    line-height: 216.8%;
+
+    @include media($xxl){
+      font-size: 12px;
+    }
+  }
+
   & .green{
     color: #008D17;
     font-weight: 600;
@@ -181,7 +190,7 @@ body{
 }
 
 [class*="content"]{
-  max-width: calc(100% - 650px);
+  max-width: calc(100% - 600px);
 
   @include media($xxl){
     padding-bottom: 32px;
@@ -631,9 +640,10 @@ body{
 
 .services{
   background: url(../images/services.webp) center / cover no-repeat;
-  margin-top: 100px;
+  margin-top: 150px;
   color: #fff;
   padding-bottom: 50px;
+  margin-bottom: 100px;
 
   @include media($xxl){
     margin-top: 50px;
