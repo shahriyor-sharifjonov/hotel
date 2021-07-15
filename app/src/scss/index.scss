@@ -1307,10 +1307,66 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include media($xxl){
+      flex-direction: column;
+    }
   }
 
   &__subtitle{
     color: #141414;
+    margin-bottom: 20px;
+
+    @include media($xxl){
+      font-size: 14px;
+      line-height: 171.8%;
+    }
+
+    span{
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #4F4F4F;
+    }
+  }
+
+  &__btn{
+    height: 67px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #008D17;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+
+    @include media($xxl){
+      font-size: 12px;
+      line-height: 15px;
+      max-width: 212px;
+      height: 35px;
+      margin: 30px auto 0;
+    }
+  }
+
+  &__about__row{
+    display: flex;
+  }
+
+  &__about__row__big{
+
+    @include media($xxl){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__subtitle__big{
+    color: #141414;
+    font-size: 28px;
     margin-bottom: 20px;
 
     span{
@@ -1322,12 +1378,25 @@ a{
 
   &__about{
     max-width: 500px;
+
+    @include media($xxl){
+      max-width: 100%;
+      width: 100%;
+      order: 1;
+      margin-top: 15px;
+    }
   }
 
   &__images{
     max-width: 850px;
     width: 100%;
     margin-top: -80px;
+
+    @include media($xxl){
+      max-width: 100%;
+      width: 100%;
+      margin-top: 0;
+    }
 
     &__row{
       display: flex;

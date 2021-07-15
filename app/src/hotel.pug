@@ -52,12 +52,18 @@ html(lang="ru")
         h1.title.room__title Номер отель
         .room__sides
           .room__about
-            p.services__row__title.room__subtitle <span>Площадь номера:</span>  <br> 25 м2, жилая часть 17 м2 
-            p.services__row__title.room__subtitle <span>Тип номера:</span>  <br> VIP
-            p.services__row__title.room__subtitle <span>Тип кровати:</span>  <br> Двуспальная кровать 180 х 200 см или 2 кровати 90 х 200 см
-            p.services__row__title.room__subtitle <span>Ванная комната:</span>  <br> Совмещенная
+            .room__about__row__big
+              p.services__row__title.room__subtitle <span>Площадь номера:</span>  <br> 25 м2, жилая часть 17 м2 
+              p.services__row__title.room__subtitle <span>Тип номера:</span>  <br> VIP
+            .room__about__row__big
+              p.services__row__title.room__subtitle <span>Тип кровати:</span>  <br> Двуспальная кровать 180 х 200 см или 2 кровати 90 х 200 см
+              p.services__row__title.room__subtitle <span>Ванная комната:</span>  <br> Совмещенная
             p.services__row__title.room__subtitle <span>Wi-fi:</span>  <br> Присутствует
             hr
+            .room__about__row 
+              p.services__row__title.room__subtitle__big <span>Одноместный:</span>  <br> От 700 грн
+              p.services__row__title.room__subtitle__big <span>Двухместный:</span>  <br> От 1000 грн
+            a(href="bron.html").room__btn Забронировать 
           .room__images
             img(src="images/vip-1.webp", alt="vip room").room__img.big
             .room__images__row 
