@@ -1148,6 +1148,11 @@ a{
     font-size: 14px;
     line-height: 18px;
     color: #828282;
+    
+    @include media($lg){
+      font-size: 10px;
+      line-height: 13px;
+    }
   }
 
   &__devider{
