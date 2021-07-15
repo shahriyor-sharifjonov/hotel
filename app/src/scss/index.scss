@@ -22,6 +22,12 @@ body{
   &::first-letter{
     color: #008D17;
   }
+
+  @include media($xxl){
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .p{
@@ -36,6 +42,13 @@ body{
   & .green{
     color: #008D17;
     font-weight: 600;
+  }
+
+  @include media($xxl){
+    font-size: 12px;
+    line-height: 216.8%;
+    text-align: center;
+    font-weight: 400;
   }
 }
 
@@ -53,6 +66,128 @@ body{
   @include media($xxl){
     font-size: 12px;
     line-height: 15px;
+  }
+}
+
+.abs{
+  position: absolute;
+  background: rgba(0, 141, 23, 0.5);
+  backdrop-filter: blur(5px);
+  width: 40px;
+  height: 40px;
+  
+  &__top{
+    top: -15px;
+    left: -15px;
+
+    @include media($lg){
+      top: -8px;
+      left: 0;
+    }
+  }
+  &__bottom{
+    bottom: -15px;
+    right: 0px;
+
+    @include media($xxl){
+      bottom: -15px;
+      right: -15px;
+    }
+
+    @include media($lg){
+      bottom: -4px;
+      right: 0;
+    }
+  }
+
+  @include media($lg){
+    width: 20px;
+    height: 14px;
+  }
+}
+
+[class*="imagine"]{
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 160px;
+    height: 40px;
+    background: rgba(0, 141, 23, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+
+    @include media($xxl){
+      right: -15px;
+    }
+
+    @include media($lg){
+      width: 90px;
+      height: 14px;
+      top: -8px;
+      right: 0;
+    }
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    width: 160px;
+    height: 40px;
+    background: rgba(0, 141, 23, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+
+    @include media($lg){
+      width: 90px;
+      height: 14px;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+
+  
+  @include media($xxl){
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  @include media($xl){
+    max-width: 100%;
+    width: 100%;
+    max-height: max-content;
+    height: max-content;  
+    aspect-ratio: 2 / 1;
+  }
+}
+
+.img{
+  position: relative;
+
+
+  @include media($xxl){
+    max-width: 100%;
+    max-height: 500px;
+  }
+  @include media($lg){
+    aspect-ratio: 2 / 1;
+  }
+}
+
+[class*="content"]{
+  max-width: calc(100% - 650px);
+
+  @include media($xxl){
+    padding-bottom: 32px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -112,7 +247,7 @@ body{
       background: #141414;
       flex-direction: column;
       transform: translateX(100%);
-      transition: 0.5s transform;
+      transition: 0.5s transform ease-out;
       padding-top: 50px;
       z-index: 50;
       justify-content: start;
@@ -308,5 +443,33 @@ body{
       line-height: 17px;
       max-width: 400px; 
     }
+  }
+}
+
+//=========================================================
+//============================about========================
+//=========================================================
+
+.about{
+  position: relative;
+  margin-top: 100px;
+
+  &.container{
+    display: flex;
+    max-width: 100%;
+  }
+
+  &__imagine{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__img{
+    max-width: 750px;
+    width: 100%;
+    max-height: 750px;
+    height: 100%;
+    object-fit: cover;
   }
 }
