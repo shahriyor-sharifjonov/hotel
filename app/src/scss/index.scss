@@ -589,10 +589,20 @@ a{
   margin-top: 40px;
   position:static;
 
+  @include media($lg){
+    margin-top: 0px;
+  }
+
   &-bullet{
     width: 20px;
     height: 20px;
     margin: 0 10px;
+
+    @include media($lg){
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+    }
 
     &-active{
       background: #008D17;
@@ -605,10 +615,20 @@ a{
   margin: 40px auto;
   text-align: center;
 
+  @include media($lg){
+    margin-top: 0px;
+  }
+
   &-bullet{
     width: 20px;
     height: 20px;
     margin: 0 10px;
+
+    @include media($lg){
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+    }
 
     &-active{
       background: #008D17;
@@ -621,10 +641,20 @@ a{
   margin: 40px auto;
   text-align: center;
 
+  @include media($lg){
+    margin-top: 0px;
+  }
+
   &-bullet{
     width: 20px;
     height: 20px;
     margin: 0 10px;
+
+    @include media($lg){
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+    }
 
     &-active{
       background: #008D17;
