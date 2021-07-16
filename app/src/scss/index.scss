@@ -1549,3 +1549,19 @@ a{
     }
   }
 }
+
+.nomers{
+  margin-top: 150px;
+
+  &__title{
+    font-size: 76px;
+
+    @include media(1400){
+      font-size: 56px;
+    }
+    @include media($md){
+      font-size: 48px;
+      line-height: 120%;
+    }
+  }
+}
