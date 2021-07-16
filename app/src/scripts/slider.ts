@@ -27,6 +27,11 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 50
     }
+  },
+  autoplay: {
+    delay: 2000,
+    stopOnLastSlide: false,
+    disableOnInteraction:false,
   }
 });
 var swiper = new Swiper(".mySwiper2", {
@@ -58,6 +63,11 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 3,
       spaceBetween: 50
     }
+  },
+  autoplay: {
+    delay: 2000,
+    stopOnLastSlide: false,
+    disableOnInteraction:false,
   }
 });
 var swiper = new Swiper(".mySwiper3", {
@@ -89,5 +99,10 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 3,
       spaceBetween: 50
     }
+  },
+  autoplay: {
+    delay: 2000,
+    stopOnLastSlide: false,
+    disableOnInteraction:false,
   }
 });
