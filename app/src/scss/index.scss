@@ -198,6 +198,10 @@ a{
 [class*="content"]{
   max-width: calc(100% - 600px);
 
+  @include media(1550){
+    max-width: calc(100% - 700px);
+  }
+
   @include media($xxl){
     padding-bottom: 32px;
     max-width: 100%;
