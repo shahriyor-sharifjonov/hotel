@@ -600,9 +600,43 @@ a{
   }
 }
 
+.swiper-pagination2{
+  position: static;
+  margin: 40px auto;
+  text-align: center;
+
+  &-bullet{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+
+    &-active{
+      background: #008D17;
+    }
+  }
+}
+
+.swiper-pagination3{
+  position: static;
+  margin: 40px auto;
+  text-align: center;
+
+  &-bullet{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+
+    &-active{
+      background: #008D17;
+    }
+  }
+}
+
 .hotel{
   margin-top: 100px;
   padding-bottom: 100px;
+  min-width: 0;
+
 
   @include media($xxl){
     padding-bottom: 0px;
